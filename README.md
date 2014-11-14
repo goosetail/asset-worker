@@ -1,4 +1,4 @@
 Assets
 ======
 
-Assets is a Node.js module for recursively finding asset files in the /client directory, combining them, and exporting them to the /.build directory of your project. It will also compile any Stylus files you may have. 
+Assets is a Node.js module for recursively finding asset files in a client directory, and exporting them to a build directory of your project. It will also compile any Jade and Stylus files you may have. 
