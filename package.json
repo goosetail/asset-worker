@@ -1,0 +1,35 @@
+{
+	"name": "assets",
+	"description": "assets is a node module for recursively gathering asset files and making them available to the client",
+	"version": "0.0.1",
+	"author": {
+		"name": "Pete Fredricks",
+		"email": "pete@goosetail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:goosetail/assets.git"
+	},
+	"dependencies": {
+		"async": "0.9.x",
+		"mkdirp": "0.5.x",
+		"nib": "1.0.x",
+		"stylus": "0.47.x",
+		"underscore": "*"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/goosetail/assets/issues"
+	},
+	"homepage": "https://github.com/goosetail/assets",
+	"maintainers": [
+		{
+			"name": "goosetail",
+			"email": "pete@goosetail.com"
+		},
+		{
+			"name": "FajitaNachos",
+			"email": "andrew@goosetail.com"
+		}
+	]
+}
