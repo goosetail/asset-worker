@@ -1,7 +1,7 @@
 {
 	"name": "asset-worker",
 	"description": "Asset Worker is a node module for recursively gathering asset files and making them available in your build directory.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": {
 		"name": "Pete Fredricks",
 		"email": "pete@goosetail.com"
