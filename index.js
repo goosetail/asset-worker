@@ -159,6 +159,9 @@ function preparePathsForBrowser(debug, done) {
 			return done(err);
 		}
 
+		// minimatch matches a list of paths. The ! operator says we want all paths that are not in our excluded glob
+		paths = minimatch.match(paths, "!" + config.exclude, {matchBase: true});
+
 		var genJSPaths = [];
 		var libJSPaths = [];
 
@@ -167,11 +170,6 @@ function preparePathsForBrowser(debug, done) {
 			// for public path, only use the relative path from public root
 			var pathname = path.relative(config.clientDir, jsPath);
 			var parts = pathname.split(path.sep);
-
-			// minimatch converts a glob pattern to a js regex. Here we are excluding files that match config.exclude
-			if(minimatch(pathname, config.exclude)){
-				return;
-			}
 
 			if (debug) {
 				pathname = url.format({
