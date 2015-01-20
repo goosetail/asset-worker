@@ -4,6 +4,7 @@ var fs = require('fs');
 var url = require('url');
 var path = require('path');
 var async = require('async');
+var minimatch = require('minimatch');
 var mkdirp = require('mkdirp');
 var stylus = require('stylus');
 var nib = require('nib');
@@ -15,6 +16,7 @@ var config = {
 	buildDir: '',
 	resourceRoot: '',
 	appVersion: '',
+	exclude: '',
 	optimized: false
 };
 
@@ -165,6 +167,11 @@ function preparePathsForBrowser(debug, done) {
 			// for public path, only use the relative path from public root
 			var pathname = path.relative(config.clientDir, jsPath);
 			var parts = pathname.split(path.sep);
+
+			// minimatch converts a glob pattern to a js regex. Here we are excluding files that match config.exclude
+			if(minimatch(pathname, config.exclude)){
+				return;
+			}
 
 			if (debug) {
 				pathname = url.format({
