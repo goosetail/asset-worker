@@ -1,33 +1,34 @@
 {
-	"name": "asset-worker",
-	"description": "Asset Worker is a node module for recursively gathering asset files and making them available in your build directory.",
-	"version": "0.0.2",
-	"author": {
-		"name": "Pete Fredricks",
-		"email": "pete@goosetail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:goosetail/asset-worker.git"
-	},
-	"dependencies": {
-		"async": "0.9.x",
-		"mkdirp": "0.5.x",
-		"nib": "1.0.x",
-		"stylus": "0.47.x",
-		"underscore": "*"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/goosetail/asset-worker/issues"
-	},
-	"homepage": "https://github.com/goosetail/asset-worker",
-	"maintainers": [
-		{
-			"name": "goosetail",
-			"email": "info@goosetail.com"
-		}
-	],
+  "name": "asset-worker",
+  "description": "Asset Worker is a node module for recursively gathering asset files and making them available in your build directory.",
+  "version": "0.0.4",
+  "author": {
+    "name": "Pete Fredricks",
+    "email": "pete@goosetail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:goosetail/asset-worker.git"
+  },
+  "dependencies": {
+    "async": "0.9.x",
+    "minimatch": "2.0.x",
+    "mkdirp": "0.5.x",
+    "nib": "1.0.x",
+    "stylus": "0.47.x",
+    "underscore": "*"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goosetail/asset-worker/issues"
+  },
+  "homepage": "https://github.com/goosetail/asset-worker",
+  "maintainers": [
+    {
+      "name": "goosetail",
+      "email": "info@goosetail.com"
+    }
+  ],
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
 	}

@@ -24,7 +24,7 @@ And then setup your options.
 	assetWorker.setOptions({
 		clientDir: clientDir,
 		buildDir: buildDir,
-		resourceRoot: nconf.get( 'app:resourceRoot' ),
-		optimized: nconf.get( 'app:optimized' ),
+		resourceRoot: nconf.get('app:resourceRoot'),
+		optimized: nconf.get('app:optimized'),
 		appVersion: require('../package.json').version
 	});
