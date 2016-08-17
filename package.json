@@ -27,5 +27,8 @@
 			"name": "goosetail",
 			"email": "info@goosetail.com"
 		}
-	]
+	],
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org"
+	}
 }
